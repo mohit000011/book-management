@@ -25,7 +25,7 @@ $key = $_ENV['JWT_SECRET']; // Load secret key from .env
 
 $method = $_SERVER['REQUEST_METHOD']; // Get HTTP method
 
-// **🔹 User Registration**
+// User Registration
 if ($method == 'POST' && isset($_GET['action']) && $_GET['action'] == 'register') {
     $input = json_decode(file_get_contents("php://input"), true);
 
